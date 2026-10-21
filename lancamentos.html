@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0B0B0B" />
+    <meta
+      name="description"
+      content="Cadastre seu interesse para receber materiais sobre futuros lançamentos imobiliários em Belém com Bruno Fabricio, CRECI-PA 14.622."
+    />
+    <meta name="robots" content="index, follow" />
+    <title>Futuros Lançamentos em Belém | Bruno Fabricio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/lancamentos.css" />
+    <script src="js/lancamentos.js" defer></script>
+  </head>
+  <body>
+    <a class="launch-skip" href="#cadastro">Ir para o cadastro</a>
+
+    <header class="launch-header">
+      <a
+        class="launch-header__brand"
+        href="index.html"
+        aria-label="Bruno Fabricio, página inicial"
+      >
+        <img src="assets/logo.png" alt="Bruno Fabricio" />
+      </a>
+      <div class="launch-header__identity">
+        <span>Corretor de Imóveis</span>
+        <span>CRECI-PA 14.622</span>
+      </div>
+      <a class="launch-header__back" href="index.html">Página principal</a>
+    </header>
+
+    <main class="launch-main">
+      <section class="launch-visual" aria-labelledby="launch-title">
+        <img
+          class="launch-visual__image"
+          src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1800&q=85"
+          alt="Residência contemporânea com arquitetura de linhas marcantes"
+          fetchpriority="high"
+        />
+        <div class="launch-visual__veil" aria-hidden="true"></div>
+        <div class="launch-visual__content">
+          <p class="launch-kicker"><span></span> Belém, Pará</p>
+          <h1 id="launch-title">Conheça os próximos lançamentos de Belém.</h1>
+          <p class="launch-visual__copy">
+            Receba informações e materiais sobre futuros lançamentos alinhados
+            ao imóvel que você procura e ao momento da sua compra.
+          </p>
+          <a class="launch-scroll" href="#cadastro">
+            <span>Receber materiais</span>
+            <span aria-hidden="true">&#8594;</span>
+          </a>
+        </div>
+        <p class="launch-visual__caption">
+          Novos projetos. Novas possibilidades.
+        </p>
+      </section>
+
+      <section
+        class="launch-form-section"
+        id="cadastro"
+        aria-labelledby="form-title"
+      >
+        <div class="launch-form-section__topline">
+          <span>Interesse em lançamentos</span>
+          <span class="launch-form-section__index">01 / 01</span>
+        </div>
+
+        <div class="launch-form-section__intro">
+          <p class="launch-kicker"><span></span> Acesso aos materiais</p>
+          <h2 id="form-title">O que você procura?</h2>
+          <p>
+            Conte um pouco sobre seu interesse. A solicitação será encaminhada
+            diretamente ao Bruno pelo WhatsApp.
+          </p>
+        </div>
+
+        <form class="launch-form" id="launch-form">
+          <div class="launch-field">
+            <label for="launch-name">Nome completo <span>*</span></label>
+            <input
+              id="launch-name"
+              name="nome"
+              type="text"
+              autocomplete="name"
+              placeholder="Como podemos chamar você?"
+              minlength="2"
+              required
+            />
+          </div>
+
+          <div class="launch-field">
+            <label for="launch-phone">WhatsApp <span>*</span></label>
+            <input
+              id="launch-phone"
+              name="whatsapp"
+              type="tel"
+              inputmode="tel"
+              autocomplete="tel"
+              placeholder="(91) 99999-9999"
+              maxlength="15"
+              required
+              aria-describedby="phone-help"
+            />
+            <small id="phone-help"
+              >Inclua o DDD para facilitar o contato.</small
+            >
+          </div>
+
+          <div class="launch-field">
+            <label for="launch-property"
+              >Tipo de imóvel desejado <span>*</span></label
+            >
+            <select id="launch-property" name="tipoImovel" required>
+              <option value="" selected disabled>Selecione uma opção</option>
+              <option value="Apartamento">Apartamento</option>
+              <option value="Casa">Casa</option>
+              <option value="Lote ou terreno">Lote ou terreno</option>
+              <option value="Imóvel comercial">Imóvel comercial</option>
+              <option value="Ainda estou avaliando">
+                Ainda estou avaliando
+              </option>
+            </select>
+          </div>
+
+          <div class="launch-field">
+            <label for="launch-timing">Previsão de compra <span>*</span></label>
+            <select id="launch-timing" name="previsaoCompra" required>
+              <option value="" selected disabled>Selecione uma previsão</option>
+              <option value="Nos próximos 3 meses">Nos próximos 3 meses</option>
+              <option value="De 3 a 6 meses">De 3 a 6 meses</option>
+              <option value="De 6 a 12 meses">De 6 a 12 meses</option>
+              <option value="Em mais de 12 meses">Em mais de 12 meses</option>
+              <option value="Ainda sem previsão definida">
+                Ainda sem previsão definida
+              </option>
+            </select>
+          </div>
+
+          <button class="launch-submit" type="submit">
+            <span>Solicitar acesso aos materiais</span>
+            <span aria-hidden="true">&#8594;</span>
+          </button>
+          <p class="launch-privacy">
+            Ao continuar, seus dados serão incluídos na mensagem enviada ao
+            Bruno pelo WhatsApp. O envio só será concluído quando você confirmar
+            a mensagem no WhatsApp.
+          </p>
+          <p
+            class="launch-status"
+            id="launch-status"
+            role="status"
+            aria-live="polite"
+            hidden
+          ></p>
+        </form>
+
+        <footer class="launch-footer">
+          <span>Bruno Fabricio</span>
+          <span>Corretor de Imóveis · CRECI-PA 14.622</span>
+          <a href="index.html">Voltar ao site</a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
